@@ -24,6 +24,8 @@ define('QUEASY_URL', $queasyUrl);
 
 $route = explode('/', $routeStr);
 
+session_start();
+
 $request = new queasy\HttpRequest($_GET, $_POST, $_FILES, $_SESSION);
 
 $app = new app\App($route, $_SERVER['REQUEST_METHOD']);
