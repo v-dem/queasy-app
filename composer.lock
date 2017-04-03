@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f146b9558b6a7ef0dfc776a56aef85bf",
-    "content-hash": "d940b1bbd9d307dc50db5e9a6e1bf393",
+    "hash": "c49152ac8321d845e9f81cf650685bf4",
+    "content-hash": "00755e10c1e1950f0ca62d2e78fa7012",
     "packages": [
         {
             "name": "psr/log",
@@ -60,12 +60,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/v-dem/queasy-core.git",
-                "reference": "4e26d3adcbd3db524c1e31025ff8b96b7c1e533b"
+                "reference": "3a0e4e0b7118312407e2d190d6dcd28524eaf5be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/v-dem/queasy-core/zipball/4e26d3adcbd3db524c1e31025ff8b96b7c1e533b",
-                "reference": "4e26d3adcbd3db524c1e31025ff8b96b7c1e533b",
+                "url": "https://api.github.com/repos/v-dem/queasy-core/zipball/3a0e4e0b7118312407e2d190d6dcd28524eaf5be",
+                "reference": "3a0e4e0b7118312407e2d190d6dcd28524eaf5be",
                 "shasum": ""
             },
             "require": {
@@ -79,7 +79,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2017-04-02 20:02:05"
+            "time": "2017-04-03 06:34:47"
         }
     ],
     "packages-dev": [],
