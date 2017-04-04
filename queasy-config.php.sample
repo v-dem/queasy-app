@@ -19,6 +19,13 @@ return array(
         'path' => 'i18n',
         'default' => 'en'
     ),
-    'test' => array()
+    'queasy\\validation\\Validator' => array(
+        'rules' => array(
+            'email' => 'queasy\\validation\\EmailRule',
+            'maxlength' => 'queasy\\validation\\MaxlengthRule',
+            'minlength' => 'queasy\\validation\\MinlengthRule',
+            'required' => 'queasy\\validation\\RequiredRule'
+        )
+    )
 );
 
