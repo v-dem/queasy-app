@@ -9,11 +9,13 @@ return array(
         'path' => 'logs/debug.log'
     ),
     'queasy\\db\\DB' => array(
-        'driver' => 'mysql',
-        'host' => 'localhost',
-        'name' => 'queasy_db',
-        'user' => 'queasy_user',
-        'password' => 'queasy_password'
+        'default' => array(
+            'driver' => 'mysql',
+            'host' => 'localhost',
+            'name' => 'queasy_db',
+            'user' => 'queasy_user',
+            'password' => 'queasy_password'
+        )
     ),
     'queasy\\i18n\\Lang' => array(
         'path' => 'i18n',
