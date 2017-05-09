@@ -2,9 +2,9 @@
 
 namespace app;
 
-use queasy\Kernel;
+use queasy\App as BaseApp;
 
-class App extends Kernel
+class App extends BaseApp
 {
 
 }
