@@ -19,7 +19,7 @@
 
                 <div class="col-sm-6">
                     <div class="card">
-                        <div class="card-header">Welcome!</div>
+                        <div class="card-header">Welcome to <?= $name ?>!</div>
 
                         <div class="card-block">
                             <h4 class="card-title">Queasy is a Quick and Easy PHP framework</h4>

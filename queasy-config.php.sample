@@ -14,7 +14,11 @@ return array(
             'host' => 'localhost',
             'name' => 'queasy_db',
             'user' => 'queasy_user',
-            'password' => 'queasy_password'
+            'password' => 'queasy_password',
+            'fetchMode' => \PDO::FETCH_ASSOC,
+            'options' => array(
+                \PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8; SET CHARACTER SET utf8;'
+            )
         )
     ),
     'queasy\\i18n\\Lang' => array(
