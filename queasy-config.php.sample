@@ -2,8 +2,8 @@
 
 return array(
     'queasy\\Loader' => array(
-        'app' => 'app',
-        'views' => 'views'
+        'app' => 'queasy\\App.php',
+        'logger' => 'queasy\\log\\Logger.php'
     ),
     'queasy\\log\\Logger' => array(
         'path' => 'logs/debug.log'

@@ -60,12 +60,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/v-dem/queasy-core.git",
-                "reference": "871cfe78d3c6ee8a8f74cac0467773d4277b871f"
+                "reference": "1b3690f4ff1826644a73c36e3b62da086c1a7666"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/v-dem/queasy-core/zipball/871cfe78d3c6ee8a8f74cac0467773d4277b871f",
-                "reference": "871cfe78d3c6ee8a8f74cac0467773d4277b871f",
+                "url": "https://api.github.com/repos/v-dem/queasy-core/zipball/1b3690f4ff1826644a73c36e3b62da086c1a7666",
+                "reference": "1b3690f4ff1826644a73c36e3b62da086c1a7666",
                 "shasum": ""
             },
             "require": {
@@ -82,7 +82,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2017-05-22 10:41:07"
+            "time": "2017-05-22 14:24:42"
         }
     ],
     "packages-dev": [],
