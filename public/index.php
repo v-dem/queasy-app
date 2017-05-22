@@ -28,7 +28,8 @@ session_start();
 
 $request = new queasy\HttpRequest($_GET, $_POST, $_FILES, $_SESSION);
 
-$app = new app\App($route, $_SERVER['REQUEST_METHOD']);
+$appClass = queasy\Loader::load('app');
+$app = new $appClass($route, $_SERVER['REQUEST_METHOD']);
 
 $app->handle($request);
 
