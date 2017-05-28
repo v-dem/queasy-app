@@ -1,37 +1,16 @@
 <?php
 
-define('QUEASY_ROOT', realpath(__DIR__ . DIRECTORY_SEPARATOR . '..'));
+// Means that the parent folder is the main Queasy folder
+define('QUEASY_DIR', dirname(dirname(__FILE__)));
 
-chdir(QUEASY_ROOT);
+// Means that the parent folder is the main Queasy folder
+define('VENDOR_DIR', sprintf('%s%s%s', QUEASY_DIR, DIRECTORY_SEPARATOR, 'vendor'));
 
-require_once('vendor' . DIRECTORY_SEPARATOR . 'autoload.php');
-
-$routeStr = preg_replace(
-    '/\?.*$/',
-    '',
-    str_replace(
-        $queasyUrl = str_replace(
-            basename(__FILE__),
-            '',
-            $_SERVER['SCRIPT_NAME']
-        ),
-        '',
-        $_SERVER['REQUEST_URI']
+// Include Queasy bootstrapping file
+@require_once(
+    sprintf(
+        '%s%sv-dem%squeasy-core%ssrc%sbootstrap.php',
+        DIRECTORY_SEPARATOR, VENDOR_DIR, DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR
     )
 );
-
-define('QUEASY_URL', $queasyUrl);
-
-$route = explode('/', $routeStr);
-
-session_start();
-
-$request = new queasy\HttpRequest($_GET, $_POST, $_FILES, $_SESSION);
-
-$appClass = queasy\Loader::load('app');
-$app = new $appClass($route, $_SERVER['REQUEST_METHOD']);
-
-$app->handle($request);
-
-queasy\log\Logger::info(sprintf('Script execution time: %s', microtime(true) - $_SERVER['REQUEST_TIME_FLOAT']));
 
