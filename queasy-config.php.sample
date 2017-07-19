@@ -3,7 +3,8 @@
 return array(
     'queasy\\Loader' => array(
         'app' => 'queasy\\App',
-        'logger' => 'queasy\\log\\Logger'
+        'logger' => 'queasy\\log\\Logger',
+        'route' => 'queasy\\DefaultRoute'
     ),
     'queasy\\log\\Logger' => array(
         'path' => 'logs/debug.log'
@@ -21,8 +22,12 @@ return array(
             )
         )
     ),
-    'queasy\\i18n\\Lang' => array(
+    'queasy\\i18n\\Trans' => array(
         'default' => 'en',
+        'rules' => array(
+            'ru' => array('en'),
+            'uk' => array('ru', 'en')
+        ),
         'translations' => new queasy\config\Loader('i18n/translations.php')
     ),
     'queasy\\validation\\Validator' => array(
